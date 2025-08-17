@@ -83,7 +83,7 @@ with st.form("gout_form"):
 
 # ============ PREDICTION ============
 if submit:
-    with open("model.pkl", "rb") as f:
+    with open("pickle_model.pkl", "rb") as f:
         model = pickle.load(f)
 
     X = np.array([[
